@@ -11,10 +11,12 @@ import Books from './components/Books';
 import Press from './components/Press';
 import Footer from './components/Footer';
 import QuickNav from './components/QuickNav';
+import Popup from './components/Popup';
 
 function App() {
   return (
     <Layout>
+      <Popup/>
       <Navbar />
       <Banner />
       <Subscription/>
