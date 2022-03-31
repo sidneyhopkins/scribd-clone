@@ -1,0 +1,154 @@
+.container {
+  max-width: 100vw;
+  height: 100%;
+  margin: 0 auto;
+  background-color: #00293f;
+}
+
+.imagewrapper {
+  background-image: url(../assets/bg_image.jpg);
+  background-size: cover;
+  background-position: center right;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+@media only screen and (max-width: 700px) {
+  .imagewrapper {
+    background-image: none;
+    overflow: hidden;
+    max-width: 100vw;
+    transform: rotate(0);
+    position: relative;
+  }
+  .imagewrapper:before {
+    content: "";
+    position: absolute;
+    width: 300%;
+    height: 100%;
+    top: -40%;
+    left: -50%;
+    z-index: 0;
+    background: url(../assets/bg_image.jpg) 0 0 no-repeat;
+    background-size: contain;
+    background-position: left;
+    transform: rotate(-38deg) scale(1.5);
+  }
+}
+
+.imagechildwrapper {
+  width: 100%;
+  height: 100%;
+  max-width: 1600px;
+  z-index: 1;
+}
+@media only screen and (max-width: 1200px) {
+  .imagechildwrapper {
+    background: linear-gradient(-90deg, rgba(255, 255, 255, 0), #00293f);
+  }
+}
+@media only screen and (max-width: 700px) {
+  .imagechildwrapper {
+    background: linear-gradient(rgba(255, 255, 255, 0), #00293f);
+  }
+}
+
+.contentwrapper {
+  max-width: 100vw;
+  height: 100%;
+  max-width: 1600px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-bottom: 110px;
+  margin-left: 57px;
+  padding-top: 142px;
+}
+@media only screen and (max-width: 700px) {
+  .contentwrapper {
+    z-index: 1;
+    padding-top: 316px;
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .contentwrapper {
+    padding-top: 0;
+    height: 530px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+}
+
+.contentbox {
+  color: white;
+  width: 100%;
+}
+
+.endless {
+  max-width: 550px;
+  width: 100%;
+}
+.endless h2 {
+  font-size: 52px;
+  font-weight: 600;
+  display: inline-block;
+}
+@media only screen and (max-width: 700px) {
+  .endless h2 {
+    font-size: 42px;
+    text-overflow: wrap;
+    width: 75vw;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .endless h2 {
+    font-size: 32px;
+  }
+}
+
+.anytime {
+  font-size: 22px;
+  margin-bottom: 26px;
+}
+@media only screen and (max-width: 550px) {
+  .anytime {
+    font-size: 16px;
+  }
+}
+
+.readfree {
+  text-decoration: none;
+  color: #001927;
+  background-color: white;
+  border: solid 1px #1E7B85;
+  border-radius: 4px;
+  display: block;
+  width: 320px;
+  text-align: center;
+  padding: 12px 24px;
+  margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.readfree:hover {
+  color: #001927;
+}
+@media only screen and (max-width: 550px) {
+  .readfree {
+    width: 100%;
+    padding: 10px 24px;
+  }
+}
+
+.price {
+  font-size: 16px;
+}
+@media only screen and (max-width: 550px) {
+  .price {
+    font-size: 14px;
+  }
+}

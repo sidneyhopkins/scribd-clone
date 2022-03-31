@@ -1,0 +1,57 @@
+@import './variables';
+
+.container {
+  margin: 0 auto;
+  max-width: 100vw;
+  background-color: #fafbfd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.quotediv {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 700px;
+  width: 100%;
+  margin-bottom: 60px;
+  @media only screen and (max-width: 1024px) {
+    margin-bottom: 40px;
+  }
+
+  p {
+    font-style: italic;
+    font-size: 24px;
+    text-align: center;
+    padding: 0 50px;
+    z-index: 1;
+    @media only screen and (max-width: 700px) {
+      padding: 0 30px;
+    }
+  }
+
+  span {
+    font-size: 18px;
+    z-index: 1;
+  }
+}
+
+.quoteimg {
+  width: 60px;
+  position: relative;
+  top: 40px;
+  left: -44%;
+  z-index: 0;
+  @media only screen and (max-width: 550px) {
+    left: -40%;
+  }
+}
