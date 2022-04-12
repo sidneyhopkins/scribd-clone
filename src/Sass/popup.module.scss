@@ -14,11 +14,17 @@
 }
 
 .close {
+  background-color: transparent;
+  border: none;
+  color: white;
   position: relative;
   top: 0;
   left: 95%;
   text-align: right;
   cursor: pointer;
+  &:hover {
+    color: lightblue;
+  }
 }
 
 .popupbox {
@@ -29,8 +35,18 @@
   background-color: rgb(30, 19, 37);
   a {
     color: lightblue;
+    text-decoration: none;
+
     &:hover {
       color: rgb(80, 211, 255);
+      
+      span {
+        text-decoration: underline;
+      }
+      .chevright {
+        transform: translateX(6px);
+        transition: 0.2 s all;
+      }
     }
   }
 }
